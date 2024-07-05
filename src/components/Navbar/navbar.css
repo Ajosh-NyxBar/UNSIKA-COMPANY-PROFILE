@@ -28,3 +28,8 @@ nav ul li{
     margin: 5px 20px;
  
 }
+
+.dark-nav{
+  background: maroon;
+  transition: 0.5s ease-in-out;
+}
