@@ -33,8 +33,18 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials">
-      <img src={nextIcon} alt="" className="next-btn" onClick={handleSlideNext} />
-      <img src={backIcon} alt="" className="back-btn" onClick={handleSlideBack} />
+      <img
+        src={nextIcon}
+        alt=""
+        className="next-btn"
+        onClick={handleSlideNext}
+      />
+      <img
+        src={backIcon}
+        alt=""
+        className="back-btn"
+        onClick={handleSlideBack}
+      />
       <div className="slider">
         <ul ref={slide}>
           <li>
@@ -47,13 +57,9 @@ const Testimonials = () => {
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                totam reprehenderit autem blanditiis dolores quae, maiores iste
-                voluptas quos animi laudantium nesciunt? Atque eius id illum
-                vero assumenda magnam voluptas, perferendis quae ex adipisci
-                harum cupiditate explicabo! Laborum commodi provident quis
-                consectetur, sint sequi iste in reprehenderit quae repudiandae
-                ipsa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                laborum minus officiis dolores obcaecati repellat repudiandae
+                dignissimos consequuntur dolor tenetur!
               </p>
             </div>
           </li>
@@ -67,13 +73,9 @@ const Testimonials = () => {
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                totam reprehenderit autem blanditiis dolores quae, maiores iste
-                voluptas quos animi laudantium nesciunt? Atque eius id illum
-                vero assumenda magnam voluptas, perferendis quae ex adipisci
-                harum cupiditate explicabo! Laborum commodi provident quis
-                consectetur, sint sequi iste in reprehenderit quae repudiandae
-                ipsa.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae beatae provident suscipit. Inventore veritatis
+                a vero doloribus exercitationem nemo.
               </p>
             </div>
           </li>
@@ -87,13 +89,9 @@ const Testimonials = () => {
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                totam reprehenderit autem blanditiis dolores quae, maiores iste
-                voluptas quos animi laudantium nesciunt? Atque eius id illum
-                vero assumenda magnam voluptas, perferendis quae ex adipisci
-                harum cupiditate explicabo! Laborum commodi provident quis
-                consectetur, sint sequi iste in reprehenderit quae repudiandae
-                ipsa.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam voluptas temporibus nobis qui inventore voluptatum
+                consequatur quis illo accusantium consequuntur.
               </p>
             </div>
           </li>
@@ -107,13 +105,9 @@ const Testimonials = () => {
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                totam reprehenderit autem blanditiis dolores quae, maiores iste
-                voluptas quos animi laudantium nesciunt? Atque eius id illum
-                vero assumenda magnam voluptas, perferendis quae ex adipisci
-                harum cupiditate explicabo! Laborum commodi provident quis
-                consectetur, sint sequi iste in reprehenderit quae repudiandae
-                ipsa.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+                voluptatum saepe modi, quibusdam atque qui deserunt. Quidem
+                mollitia quaerat numquam?
               </p>
             </div>
           </li>

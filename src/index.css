@@ -41,4 +41,18 @@ a{
 .btn img{
   width: 20px;
   margin-left: 10px;
+} 
+/* Media Query */
+
+@media (max-width: 1200px) {
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow-x: hidden;
+  }
+
+  .btn{
+    padding: 14px 22px;
+
+  }
 }

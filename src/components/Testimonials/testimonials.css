@@ -70,3 +70,66 @@
 .userInfo h3{
     color: maroon;
 }
+
+/* MEDIA QUERY */
+
+@media (max-width: 800px) {
+    .testimonials{
+        padding: 0 40px;
+
+        ul{
+          li{
+            padding: 10px;
+          }
+        }
+    }
+    .next-btn,
+    .back-btn{
+        width: 35px;
+        padding: 10px;
+    }
+
+    .slide{
+      padding: 10px;
+
+      img{
+        width: 50px;
+        border: 3px solid maroon;
+      }
+    }
+}
+
+@media (max-width: 650px) {
+  .userInfo{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    h3{
+      font-size: 16px;
+    }
+  }
+
+  .slider p{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slide{
+    padding: 10px;
+  }
+
+  .slider p{
+    font-size: 10px;
+  }
+
+  .slide img{
+    width: 40px;
+    border: 2px solid maroon;
+  }
+
+  .userInfo{
+    font-size: 10px;
+  }
+}

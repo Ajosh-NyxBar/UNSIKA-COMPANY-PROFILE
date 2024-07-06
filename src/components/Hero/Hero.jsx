@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <div className="hero container">
       <div className="hero-text">
-        <h1>We Ensure better education for a better world</h1>
+        <h1>We Ensure better <br />education for a better world</h1>
         <p>
-          We are a team of 10 students from different universities and we are
+          We are a team of 10 students <br />from different universities <br />and we are
           here to help you in your studies
         </p>
         <button className="btn">

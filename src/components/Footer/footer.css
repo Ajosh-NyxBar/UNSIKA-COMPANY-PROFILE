@@ -15,3 +15,20 @@
   }
 
 }
+
+/* MEDIA QUERY */
+
+@media (max-width: 600px) {
+  .footer {
+    display: block;
+    text-align: center;
+
+    ul{
+
+      margin-top: 10px;
+      li{
+        margin: 10px;
+      }
+    }
+  }
+}
