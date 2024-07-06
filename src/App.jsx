@@ -1,12 +1,13 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Programs from './components/Programs/Programs'
-import Title from './components/Title/Title'
-import About from './components/About/About'
-import Campus from './components/Campus/Campus'
-import Testimonials from './components/Testimonials/Testimonials'
-import CoNtAcT from './components/Contact/CoNtAcT'
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Programs from "./components/Programs/Programs";
+import Title from "./components/Title/Title";
+import About from "./components/About/About";
+import Campus from "./components/Campus/Campus";
+import Testimonials from "./components/Testimonials/Testimonials";
+import CoNtAcT from "./components/Contact/CoNtAcT";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
         <Testimonials />
         <Title subtitle="Contact Us" title="Get In Touch" />
         <CoNtAcT />
+        <Footer />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

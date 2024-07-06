@@ -1,11 +1,34 @@
 import "./coNtAcT.css";
-import React from "react";
+import React, { useState } from "react";
 import msgIcon from "../../assets/msg-icon.png";
 import mailIcon from "../../assets/mail-48.png";
 import phoneIcon from "../../assets/phone-30-48.png";
 import locationIcon from "../../assets/location-48.png";
 import whiteArrow from "../../assets/white-arrow.png";
 const CoNtAcT = () => {
+  const [handleResult, setHandleResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setHandleResult("Sending...");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "c94f9eaa-cb7c-471f-9fe0-08bf3b884af2");
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    }).then((res) => res.json());
+    if (res.success) {
+      setHandleResult("Message sent successfully");
+      console.log(res);
+      event.target.reset();
+    } else {
+      setHandleResult("Message failed to send");
+      console.log(res);
+    }
+  };
+
   return (
     <div className="coNtAcT">
       <div className="contact-col">
@@ -37,7 +60,7 @@ const CoNtAcT = () => {
         </ul>
       </div>
       <div className="contact-col">
-        <form>
+        <form onSubmit={onSubmit}>
           <label htmlFor="">Your Name</label>
           <input
             type="text"
@@ -62,9 +85,11 @@ const CoNtAcT = () => {
             placeholder="Write your message"
             required
           ></textarea>
-          <button type="submit" name="btn" className="btn">Send Message <img src={whiteArrow} alt="" /></button>
+          <button type="submit" name="btn" className="btn">
+            Send Message <img src={whiteArrow} alt="" />
+          </button>
         </form>
-        <span></span>
+        <span>{handleResult}</span>
       </div>
     </div>
   );
